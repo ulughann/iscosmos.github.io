@@ -54,61 +54,63 @@ nav hr {
 
 } /* end of media query */
 
-@media (max-width: 768px) {
-nav {
-  background: #0D1117;
-  float: left;
-  height: 72px;
-  width: 100%;
+@media (pointer:none), (pointer:coarse) {
+
+  nav {
+    background: #0D1117;
+    float: left;
+    height: 72px;
+    width: 100%;
+    
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    padding-top: 12px;
   
-  display: flex; 
-  align-items: center; 
-  gap: 15px; 
-  padding-top: 12px;
-
-  /* always show on screen */
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  /* make it a row */
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-top: auto;
-
-  /* move to the bottom */
-  bottom: 0;
-  top: auto;
+    /* always show on screen */
+    position: fixed;
+    top: 0;
+    left: 0;
   
-
-}
-
-nav a {
-  display: block;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%; 
-  background: #0e141d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    /* make it a row */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: auto;
   
-  transition: border-radius 250ms, background 250ms;
+    /* move to the bottom */
+    bottom: 0;
+    top: auto;
+    
+  
+  }
+  
+  nav a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; 
+    background: #0e141d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    transition: border-radius 250ms, background 250ms;
+  }
+  
+  nav hr {
+    display: block;
+    width: 0px;
+    height: 32px;
+    border-radius: 196px;
+    border: none; 
+    background: #0e141d;
+    margin: 0;
+  }
+  
 }
 
-nav hr {
-  display: block;
-  width: 0px;
-  height: 32px;
-  border-radius: 196px;
-  border: none; 
-  background: #0e141d;
-  margin: 0;
-}
-
-}
 
 
 nav .x {
