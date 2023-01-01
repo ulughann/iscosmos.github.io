@@ -1,0 +1,170 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #010409;
+}
+
+@media (min-width: 768px) {
+  
+nav {
+  background: #0D1117;
+  float: left;
+  height: 100%;
+  width: 72px;
+  
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 15px; 
+  padding-top: 12px;
+
+  /* always show on screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; 
+  background: #0e141d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  transition: border-radius 250ms, background 250ms;
+}
+
+nav hr {
+  display: block;
+  width: 32px;
+  height: 2px;
+  border-radius: 196px;
+  border: none; 
+  background: #0e141d;
+  margin: 0;
+}
+
+} /* end of media query */
+
+@media (max-width: 768px) {
+nav {
+  background: #0D1117;
+  float: left;
+  height: 72px;
+  width: 100%;
+  
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+  padding-top: 12px;
+
+  /* always show on screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* make it a row */
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: auto;
+
+  /* move to the bottom */
+  bottom: 0;
+  top: auto;
+  
+
+}
+
+nav a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; 
+  background: #0e141d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  transition: border-radius 250ms, background 250ms;
+}
+
+nav hr {
+  display: block;
+  width: 0px;
+  height: 32px;
+  border-radius: 196px;
+  border: none; 
+  background: #0e141d;
+  margin: 0;
+}
+
+}
+
+
+nav .x {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+nav a:hover,
+nav a.active {
+  border-radius: 25%;
+  background: #1F6FEB;
+}
+
+img {
+  color: white;
+}
+
+img:hover {
+  color: #1F6FEB;
+}
+
+.card {
+  background: #0D1117;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  margin: 15px;
+}
+
+.cardo {
+  background: #0D1117;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  margin: 5px;}
+
+  .card3 {
+    background: #0D1117;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 15px;
+  }
+
+pre {
+  background: #0d111700;
+  border-radius: 15px;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
